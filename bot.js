@@ -43,7 +43,7 @@ s4d.client.on('ready', async () => {
 
           while(s4d.client && s4d.client.token) {
               await delay(50);
-                s4d.client.user.setActivity(String('Server to be out soon'));
+                s4d.client.user.setActivity(String('Server Tickering'));
     await delay(Number(60)*1000);
     s4d.client.user.setActivity(String('PIXELHEIM'));
     await delay(Number(60)*1000);
