@@ -55,7 +55,7 @@ s4d.client.on('ready', async () => {
 
 s4d.client.on('message', async (s4dmessage) => {
   if ((s4dmessage.content) == '.ip') {
-    s4dmessage.react('✅');s4dmessage.channel.send(String('It is in progress, kek u think you could find form this?'));
+    s4dmessage.react('✅');s4dmessage.channel.send(String('```play.pixel-heim.com'));
   }
 
 });
