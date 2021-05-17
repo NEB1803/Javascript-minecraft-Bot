@@ -55,7 +55,7 @@ s4d.client.on('ready', async () => {
 
 s4d.client.on('message', async (s4dmessage) => {
   if ((s4dmessage.content) == '.ip') {
-    s4dmessage.react('✅');s4dmessage.channel.send(
+    s4dmessage.react(':PixelHeim:');s4dmessage.channel.send(
             {
                 embed: {
                     title: "**IP**",
