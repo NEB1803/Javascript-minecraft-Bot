@@ -55,11 +55,23 @@ s4d.client.on('ready', async () => {
 
 s4d.client.on('message', async (s4dmessage) => {
   if ((s4dmessage.content) == '.ip') {
-    s4dmessage.react('✅');s4dmessage.channel.send(String('`play.pixel-heim.com`'));
+    s4dmessage.channel.send(
+            {
+                embed: {
+                    title: "**IP**",
+                    color: 6711680,
+                    image: { url: "https://imgur.com/nCHb5gV.png" },
+
+                    description: (String(String('MAIN' + '**play.pixel-heim.com**') + '') + String(String(String('Germany' + '**ge.pixel-heim.com**') + '') + String('Backup' + '**173.249.49.122:25952**'))),
+                    footer: { text: null },
+                    thumbnail: { url: "https://i.imgur.com/oPdS1DB.png"}
+
+                }
+            }
+        );
   }
 
 });
-
 s4d.client.on('message', async (s4dmessage) => {
   if ((s4dmessage.content) == '.format') {
     s4dmessage.react('✅');s4dmessage.channel.send(
